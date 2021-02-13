@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$bg-color : #98C091;
+$shadow-bg : #749A77;
+$txt-color : #062726;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #98C091;
+	color: #062726;
+}
+
+.content {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 60px 40px;
+	border: 1px solid #fff;
+	box-shadow: 2px 2px 10px 5px $shadow-bg;
+
+	#password-output{
+		font-size: 22px;
+	}
+
+	.quality {
+		margin-top: 10px;
+	}
+
+	input[type="text"] {
+		background: rgba(0, 0, 0, 0);
+		border: none;
+		outline: none;
+		text-align: center;
+	}
+
+	input[type="range"] {
+		box-shadow: 2px 2px 8px 5px $shadow-bg;
+	}
+
+	button {
+		border-radius: 15px;
+		padding: 5px;
+		box-shadow: 2px 2px 2px 2px $shadow-bg;
+		&:hover {
+			cursor: pointer;
+			background-color: $txt-color;
+			color: $bg-color;
+		}
+	}
+}
+
+.range, .box, #generateButton {
+	margin-top: 30px;
+}
